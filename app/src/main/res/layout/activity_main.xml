@@ -25,4 +25,34 @@
         android:text="Call"
         />
 
+
+    <EditText
+        android:id="@+id/verifyOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/callButton"
+        android:hint="Check OTP Number"/>
+
+    <Button
+        android:id="@+id/verifyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/verifyOTP"
+        android:text="Verify"
+        />
+
+    <TextView
+        android:id="@+id/verifyConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verifyButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/red"
+        android:text="Pending"
+        android:textSize="40dp" />
 </RelativeLayout>

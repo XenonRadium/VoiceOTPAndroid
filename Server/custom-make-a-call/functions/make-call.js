@@ -7,7 +7,7 @@ exports.handler = function (context, event, callback) {
     const to = event.To;
 
     var char1, char2, char3, char4, char5, char6;
-    var generatedOTPNumber = Math.floor((100000 + Math.random() * 900000));
+    var generatedOTPNumber = event.OTP;
     var convertedOTP = generatedOTPNumber.toString();
     char1 = convertNumToString(convertedOTP[0]);
     char2 = convertNumToString(convertedOTP[1]);
